@@ -12,7 +12,7 @@ const ThemeContext = createContext<{
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>(() => {
     const saved = localStorage.getItem('theme') as Theme;
-    return saved || 'dark'; // Default to Dark for Velora
+    return saved || 'dark';
   });
 
   useEffect(() => {
