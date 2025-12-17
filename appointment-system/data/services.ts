@@ -5,7 +5,6 @@ export const services = [
     price: 1000,
     duration: '30 mins',
     icon: '✂️',
-    description: 'Professional styling'
   },
   {
     id: 'beard',
@@ -13,7 +12,6 @@ export const services = [
     price: 800,
     duration: '20 mins',
     icon: '🧔',
-    description: 'Precision trimming'
   },
   {
     id: 'color',
@@ -21,7 +19,6 @@ export const services = [
     price: 5000,
     duration: '60 mins',
     icon: '🎨',
-    description: 'Premium coloring'
   },
   {
     id: 'shave',
@@ -29,6 +26,5 @@ export const services = [
     price: 6000,
     duration: '35 mins',
     icon: '🪒',
-    description: 'Traditional shave'
   }
 ];

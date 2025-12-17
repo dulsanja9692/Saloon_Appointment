@@ -3,7 +3,7 @@ import { ThemeProvider } from '@/lib/ThemeContext';
 
 export const metadata = {
   title: 'Velora | Luxury Salon',
-  description: 'Where Style Meets Elegance',
+  description: 'Style Meets Elegance',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
