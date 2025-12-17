@@ -36,7 +36,9 @@ export default function Home() {
   };
 
   useEffect(() => {
-    fetchAppointments();
+    (async () => {
+      await fetchAppointments();
+    })();
   }, []);
 
   const handleDelete = async (id: string) => {
@@ -44,7 +46,7 @@ export default function Home() {
     try {
       await fetch(`/api/appointments/${id}`, { method: 'DELETE' });
       fetchAppointments();
-    } catch (error) {
+    } catch {
       alert('Failed to delete');
     }
   };
