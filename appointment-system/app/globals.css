@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  /* --- LIGHT MODE (High Contrast) --- */
+  /* --- LIGHT MODE  --- */
   --background: #f8fafc;
   --foreground: #020617;
   --text-muted: #475569;
@@ -15,12 +15,12 @@
   --input-bg: #ffffff;
   --input-border: #94a3b8;
 
-  /* White overlay for readability */
+  
   --bg-overlay: linear-gradient(to bottom, rgba(248, 250, 252, 0.95), rgba(248, 250, 252, 0.85));
 }
 
 [data-theme='dark'] {
-  /* --- DARK MODE (Luxury) --- */
+  /* --- DARK MODE  */
   --background: #0f111a;
   --foreground: #f8fafc;
   --text-muted: #94a3b8;
@@ -34,7 +34,7 @@
   --input-bg: rgba(30, 37, 56, 0.6);
   --input-border: #334155;
 
-  /* Dark overlay for readability */
+  
   --bg-overlay: linear-gradient(to bottom, rgba(15, 17, 26, 0.92), rgba(15, 17, 26, 0.85));
 }
 
@@ -43,7 +43,7 @@ body {
   font-family: 'Inter', sans-serif;
   min-height: 100vh;
   
-  /* Background Image Setup */
+  /* Background Image */
   background-image: 
     var(--bg-overlay),
     url('/bg.jpg');
@@ -58,7 +58,7 @@ body {
 
 html { scroll-behavior: smooth; }
 
-/* Custom Scrollbar */
+/* Scrollbar */
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: var(--background); }
 ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }

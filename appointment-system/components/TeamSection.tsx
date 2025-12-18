@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 
 export default function TeamSection() {
   const team = [
-    { name: "Sarah Jenkins", role: "Senior Stylist", color: "from-pink-500 to-rose-500" },
-    { name: "David Kim", role: "Color Specialist", color: "from-purple-500 to-indigo-500" },
-    { name: "Elena Rossi", role: "Nail Expert", color: "from-cyan-500 to-blue-500" },
+    { name: "Kamal Kumara", role: "Senior Stylist", color: "from-pink-500 to-rose-500" },
+    { name: "Thilina Prasad", role: "Beard Stylist", color: "from-purple-500 to-indigo-500" },
+    { name: "Sansala Gamage", role: "Color Specialist", color: "from-cyan-500 to-blue-500" },
   ];
 
   return (
