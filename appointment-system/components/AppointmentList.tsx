@@ -2,12 +2,12 @@
 
 import { motion } from 'framer-motion';
 
-// ✅ Updated Interface: Matches page.tsx exactly
-interface IAppointment {
+
+export interface IAppointment {
   _id: string;
   name: string;
-  phone?: string | undefined; // Explicitly allow undefined
-  email?: string | undefined; // Explicitly allow undefined
+  phone?: string | null;
+  email?: string | null;
   date: string;
   time: string;
   service: string;
@@ -56,22 +56,17 @@ export default function AppointmentList({ appointments, onDelete, onEdit }: Prop
                   >
                     <td className="p-4 font-medium text-(--foreground)">
                       {apt.name}
-                      {/* Only render phone if it exists */}
                       {apt.phone && (
                         <div className="text-xs text-(--text-muted) font-normal mt-0.5">
                           {apt.phone}
                         </div>
                       )}
                     </td>
-                    <td className="p-4 text-(--primary) font-semibold">
-                      {apt.service}
-                    </td>
+                    <td className="p-4 text-(--primary) font-semibold">{apt.service}</td>
                     <td className="p-4 text-(--text-muted)">
                       {apt.date} at <span className="text-(--foreground) font-mono text-xs bg-(--card-border) px-2 py-1 rounded ml-1">{apt.time}</span>
                     </td>
-                    <td className="p-4 text-(--text-muted) italic text-sm">
-                      {apt.reason}
-                    </td>
+                    <td className="p-4 text-(--text-muted) italic text-sm">{apt.reason}</td>
                     <td className="p-4 text-right space-x-2">
                       <button 
                         onClick={() => onEdit(apt)} 
